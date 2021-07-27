@@ -1,0 +1,30 @@
+.pictures {
+    margin-top: 200px;
+    &__pic {
+        position: relative;
+        margin-top: 50px;
+        width: 100px;
+        height: 100px;
+        background: blue;
+    }
+    &__pic::before {
+        position: absolute;
+        left: -80%;
+        top: -80%;
+        content: '';
+        width: 100px;
+        height: 100px;
+        background: red;
+        z-index: -1;
+    }
+    &__pic::after {
+        position: absolute;
+        left: 80%;
+        top: 80%;
+        content: '';
+        width: 100px;
+        height: 100px;
+        background: green;
+        z-index: -1;
+    }
+}

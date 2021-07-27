@@ -1,0 +1,33 @@
+.animation {
+    margin-top: 100px;
+    min-height: 600px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background: $box-b;
+    animation: box-animation 4s infinite;
+}
+
+@keyframes box-animation {
+    0% {
+        transform: translate(0, 400px);
+        background: $box-b;
+    }
+    25% {
+        transform: translate(400px, 400px);
+        background: $box-g;
+    }
+    50% {
+        transform: translate(400px, 0);
+        background: $box-y;
+    }
+    75% {
+        transform: translate(0, 0);
+        background: $box-r;
+    }
+    100% {
+        transform: translate(0,400px);
+        background: $box-b;
+    }
+}

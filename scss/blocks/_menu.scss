@@ -1,0 +1,57 @@
+.menu {
+    margin-top: 100px;
+    &__div {
+        display: block;
+        margin-left: 0;
+        overflow: hidden;
+        width: 200px;
+        &-header {
+            position: absolute;
+            text-transform: uppercase;
+            font-size: $text-fs;
+            line-height: $text-lh;
+            color: $text-color;
+            margin: 0 auto;
+            padding: 5px;
+            transform: rotate(90deg);
+            top: 50%;
+            right: -30%;
+        }
+        &-ul {
+            margin-left: 50px;
+            padding-top: 50px;
+            list-style: none;
+        }
+        &-link {
+            position: relative;
+            text-decoration: none;
+            font-size: $text-fs;
+            line-height: $text-lh;
+            color: $text-color;
+            @include before_link;
+            &:hover {
+                color: orange;
+            }
+        }
+    }
+}
+nav {
+    position: relative;
+    background: grey;
+    height: 500px;
+    left: -80%;
+    top: 0;
+    transition: .5s;
+}
+nav:hover {
+    left: 0;
+    .menu__div-header {
+        opacity: 0;;
+    }
+}
+
+
+
+
+
+
